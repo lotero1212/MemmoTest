@@ -6,9 +6,34 @@
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
 
+export const appColors = {
+  palette: {
+    100: '#F31559',
+    200: '#BC7AF9',
+    300: '#BC5A94',
+    400: '#F075AA',
+    500: '#FF76CE'
+  },
+
+  text: {
+    100: '#FFEECC',
+    200: '#FFDDCC',
+    300: '#FFCCCC',
+    400: '#FEBBCC'
+  },
+
+  bg: {
+    100: '#FFAF45',
+    200: '#FB6D48',
+    300: '#D74B76',
+    400: '#673F69'
+  }
+
+}
+
 export const Colors = {
   light: {
-    text: '#11181C',
+    text: appColors.palette[300],
     background: '#fff',
     tint: tintColorLight,
     icon: '#687076',
@@ -16,8 +41,8 @@ export const Colors = {
     tabIconSelected: tintColorLight,
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
+    text: appColors.text[400],
+    background: appColors.bg[400],
     tint: tintColorDark,
     icon: '#9BA1A6',
     tabIconDefault: '#9BA1A6',
